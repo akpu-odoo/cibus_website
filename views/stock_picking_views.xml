@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="stock_picking_form_view_inherit_cibus" model="ir.ui.view">
+        <field name="name">stock.picking.form.inherit.cibus</field>
+        <field name="model">stock.picking</field>
+        <field name="inherit_id" ref="stock.view_picking_form" />
+        <field name="arch" type="xml">
+            <data>
+                <xpath expr="//field[@name='partner_id']" position="after">
+                    <field name="show_invoice_button" invisible="1"></field>
+                    <field name="sale_id" invisible="1"/>
+                </xpath>
+                <xpath expr="//header" position="inside">
+                    <button 
+                    name="%(sale.action_view_sale_advance_payment_inv)d"
+                        type="action" string="Create Invoice" class="oe_highlight"
+                        invisible="show_invoice_button == False" context="{'default_sale_order_ids':[sale_id]}"/>
+                </xpath>
+            </data>
+        </field>
+    </record>
+</odoo>

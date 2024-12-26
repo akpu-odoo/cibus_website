@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+cibus_website.access_week_day,access_week_day,cibus_website.model_week_day,base.group_user,1,1,1,1

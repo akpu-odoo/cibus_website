@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="cart_popup_template" name="Cart Popup Template">
+        <main class="modal-body">
+        <t t-if="delivery_date_available">
+            <div class="popup-container">
+                <div class="popup-header">
+                    <h3>Price Changes in Your Cart</h3>
+                </div>
+                <div class="popup-body">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>Product Name</th>
+                                <th>Old Price</th>
+                                <th>New Price</th>
+                                <th>Quantity</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <t t-foreach="changed_product_price" t-as="product">
+                                <tr>
+                                    <td>
+                                        <t t-esc="product['product_name']" />
+                                    </td>
+                                    <td>
+                                        <t t-esc="product['old_price']" />
+                                    </td>
+                                    <td>
+                                        <t t-esc="product['new_price']" />
+                                    </td>
+                                    <td>
+                                        <t t-esc="product['qty']" />
+                                    </td>
+                                </tr>
+                            </t>
+                        </tbody>
+                    </table>
+                </div>
+                <div>
+                    <h4> total price : <t t-esc="total_price" />
+                    </h4>
+                </div>
+                <div class="popup-footer">
+                    <a href="/shop/checkout?express=1"
+                        class="btn btn-primary">
+                        Proceed to Checkout
+                    </a>
+                </div>
+            </div>
+        </t>
+        <t t-else="">
+        <div class="popup-container">
+                <div class="popup-header">
+                    <h3>Please select a delivery date to proceed</h3>
+                </div>
+            </div>
+        </t>
+        </main>
+    </template>
+</odoo>

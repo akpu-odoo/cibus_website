@@ -1,0 +1,187 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* cibus_website
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-12-10 13:00+0000\n"
+"PO-Revision-Date: 2024-12-10 13:00+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: cibus_website
+#. odoo-javascript
+#: code:addons/cibus_website/static/src/js/checkout_template_popover.js:0
+#, python-format
+msgid "Back To Cart"
+msgstr ""
+
+#. module: cibus_website
+#: model:ir.model,name:cibus_website.model_res_partner
+msgid "Contact"
+msgstr ""
+
+#. module: cibus_website
+#: model:ir.model.fields,field_description:cibus_website.field_week_day__create_uid
+msgid "Created by"
+msgstr "Créé par"
+
+#. module: cibus_website
+#: model:ir.model.fields,field_description:cibus_website.field_week_day__create_date
+msgid "Created on"
+msgstr "Créé le"
+
+#. module: cibus_website
+#: model_terms:ir.ui.view,arch_db:cibus_website.cart_inherit
+msgid "DD-MM-YYYY"
+msgstr "JJ-MM-AAAA"
+
+#. module: cibus_website
+#: model:ir.model.fields,field_description:cibus_website.field_sale_order__deliver_today
+msgid "Deliver Today"
+msgstr ""
+
+#. module: cibus_website
+#: model_terms:ir.ui.view,arch_db:cibus_website.cart_inherit
+msgid "Delivery Date"
+msgstr "Date de livraison"
+
+#. module: cibus_website
+#: model:ir.model.fields,field_description:cibus_website.field_week_day__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: cibus_website
+#: model:ir.model.fields,field_description:cibus_website.field_sale_order__delivery_expected_date
+#: model_terms:ir.ui.view,arch_db:cibus_website.sale_order_form_view_inherit_cibus
+msgid "Expected Delivery Date"
+msgstr "Date de livraison"
+
+#. module: cibus_website
+#: model:ir.model.fields,field_description:cibus_website.field_week_day__id
+msgid "ID"
+msgstr ""
+
+#. module: cibus_website
+#: model:ir.model.fields,field_description:cibus_website.field_sale_order__is_checked_out
+msgid "Is Checked Out"
+msgstr ""
+
+#. module: cibus_website
+#: model:ir.model.fields,field_description:cibus_website.field_sale_order__is_delivery_price_updated
+msgid "Is price updated"
+msgstr "Le prix est mis à jour"
+
+#. module: cibus_website
+#: model:ir.model.fields,field_description:cibus_website.field_week_day__write_uid
+msgid "Last Updated by"
+msgstr "Dernière mise à jour par"
+
+#. module: cibus_website
+#: model:ir.model.fields,field_description:cibus_website.field_week_day__write_date
+msgid "Last Updated on"
+msgstr "Dernière mise à jour le"
+
+#. module: cibus_website
+#: model:ir.model.fields,field_description:cibus_website.field_week_day__name
+msgid "Name"
+msgstr "Nom"
+
+#. module: cibus_website
+#: model_terms:ir.ui.view,arch_db:cibus_website.cart_popup_template
+msgid "New Price"
+msgstr "Nouveau Prix"
+
+#. module: cibus_website
+#: model_terms:ir.ui.view,arch_db:cibus_website.cart_popup_template
+msgid "Old Price"
+msgstr "Ancien Prix"
+
+#. module: cibus_website
+#: model_terms:ir.ui.view,arch_db:cibus_website.cart_popup_template
+msgid "Please select a delivery date to proceed"
+msgstr "Veuillez d’abord définir la date de livraison"
+
+#. module: cibus_website
+#. odoo-javascript
+#: code:addons/cibus_website/static/src/js/checkout_template_popover.js:0
+#, python-format
+msgid "Price Change Alert"
+msgstr "Attention changement de prix"
+
+#. module: cibus_website
+#: model_terms:ir.ui.view,arch_db:cibus_website.cart_popup_template
+msgid "Price Changes in Your Cart"
+msgstr "Pour cette date de livraison, nos Actions changent"
+
+#. module: cibus_website
+#: model:ir.model,name:cibus_website.model_product_pricelist
+msgid "Pricelist"
+msgstr "Liste de prix"
+
+#. module: cibus_website
+#: model_terms:ir.ui.view,arch_db:cibus_website.cart_popup_template
+msgid "Proceed to Checkout"
+msgstr "Valider votre panier"
+
+#. module: cibus_website
+#: model_terms:ir.ui.view,arch_db:cibus_website.cart_popup_template
+msgid "Product Name"
+msgstr "Article"
+
+#. module: cibus_website
+#: model_terms:ir.ui.view,arch_db:cibus_website.cart_popup_template
+msgid "Quantity"
+msgstr "Quantité"
+
+#. module: cibus_website
+#: model_terms:ir.ui.view,arch_db:cibus_website.sale_order_form_view_inherit_cibus
+msgid "Recompute all prices based on this pricelist and delivery date"
+msgstr ""
+"Recalculer tous les prix en fonction de cette liste de prix et de la date de"
+" livraison"
+
+#. module: cibus_website
+#: model:ir.model,name:cibus_website.model_sale_order
+msgid "Sales Order"
+msgstr "Bon de commande"
+
+#. module: cibus_website
+#: model:ir.model.fields,help:cibus_website.field_res_partner__week_day_ids
+#: model:ir.model.fields,help:cibus_website.field_res_users__week_day_ids
+msgid "Select the days of the week for which this partner is available."
+msgstr ""
+"Veuillez sélectionner les jours de la semaine disponible pour la livraison "
+"de ce client."
+
+#. module: cibus_website
+#: model_terms:ir.ui.view,arch_db:cibus_website.sale_order_form_view_inherit_cibus
+msgid ""
+"This will update the unit price of all products based on pricelist and "
+"selected Delivery Expected Date."
+msgstr ""
+"Cela mettra à jour le prix unitaire de tous les produits en fonction de la "
+"liste de prix et de la date prévue de livraison sélectionnée."
+
+#. module: cibus_website
+#: model_terms:ir.ui.view,arch_db:cibus_website.sale_order_form_view_inherit_cibus
+msgid "Update Prices"
+msgstr "Mettre à jour les prix"
+
+#. module: cibus_website
+#: model:ir.model,name:cibus_website.model_week_day
+#: model:ir.model.fields,field_description:cibus_website.field_res_partner__week_day_ids
+#: model:ir.model.fields,field_description:cibus_website.field_res_users__week_day_ids
+msgid "Week Days"
+msgstr "Jours de la semaine"
+
+#. module: cibus_website
+#: model_terms:ir.ui.view,arch_db:cibus_website.cart_popup_template
+msgid "total price :"
+msgstr "prix total :"

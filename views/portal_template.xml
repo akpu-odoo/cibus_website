@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="portal_layout_inherit_cibus" inherit_id="portal.portal_layout">
+        <xpath expr="//div[contains(@class, 'wrapper')]" position="after">
+            <a href="/shop" class="btn btn-primary">
+                See Shop
+            </a>
+        </xpath>
+    </template>
+</odoo>

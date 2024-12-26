@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="sale_order_form_view_inherit_cibus" model="ir.ui.view">
+        <field name="name">sale.order.form.inherit.cibus</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_order_form" />
+        <field name="arch" type="xml">
+            <data>
+                <xpath expr="//field[@name='payment_term_id']" position="after">
+                    <field name="is_delivery_price_updated" invisible="1"></field>
+                   <field name="is_delivery_date" invisible="1"></field>
+
+                    <field name="deliver_today"></field>
+                    <label for="delivery_expected_date"
+                        groups="product.group_product_pricelist"
+                        invisible="not is_delivery_date"
+                    />
+                    <div groups="product.group_product_pricelist"
+                        class="o_row">
+                        <field name="delivery_expected_date"
+                            id="delivery_expected_date" string="Expected Delivery Date" invisible="not is_delivery_date" />
+                        <button name="update_orderline_price" type="object"
+                            string=" Update Prices"
+                            help="Recompute all prices based on this pricelist and delivery date"
+                            class="btn-link mb-1 px-0" icon="fa-refresh"
+                            confirm="This will update the unit price of all products based on pricelist and selected Delivery Expected Date."
+                            invisible="not is_delivery_price_updated or state in ['sale', 'cancel']" />
+                    </div>
+                </xpath>
+                <xpath
+                    expr="//page[@name='order_lines']/field[@name='order_line']/tree/field[@name='name']"
+                    position="after">
+                    <field optional="show" name="nature_price" />
+                </xpath>
+            </data>
+        </field>
+    </record>
+</odoo>

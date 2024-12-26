@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="product_pricelist_item_form_view_inherit_cibus" model="ir.ui.view">
+        <field name="name">product.pricelist.item.form.inherit</field>
+        <field name="model">product.pricelist.item</field>
+        <field name="inherit_id" ref="product.product_pricelist_item_form_view" />
+        <field name="arch" type="xml">
+            <data>
+                <xpath expr="//group[@name='pricelist_rule_target']/field[@name='applied_on']" position="after">
+                    <field name="nature_price"></field>
+                </xpath>
+            </data>
+        </field>
+
+    </record>
+</odoo>
